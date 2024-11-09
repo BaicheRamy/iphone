@@ -5,6 +5,25 @@
     <link rel="icon" type="image/svg+xml" href="/public/assets/images/apple.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apple iPhone</title>
+
+  <script type="text/JavaScript">
+    ((function(){
+    var loadWidget = function(){
+    var script = "https://widget-service-dev.emplorium.io/acc-d29a9/init.js"
+    var x = document.createElement('script');
+    var sx = document.getElementsByTagName('script')[0];
+    x.src = script; x.async = true;
+    sx.parentNode.insertBefore(x,sx)
+    }
+    if(document.readyState==="complete"){
+    loadWidget();
+    } else if (window.addEventListener){
+    window.addEventListener('load',loadWidget,false)
+    } else if (window.attachEvent) {
+    window.attachEvent("onload",loadWidget)
+    }
+    })())
+    </script>
   </head>
   <body>
     <div id="root"></div>
